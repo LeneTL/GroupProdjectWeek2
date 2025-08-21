@@ -1,0 +1,68 @@
+body{
+ background-color: #ffffff;
+}
+
+.darkmode{
+    background-color: #313137;
+}
+
+.lightSize{
+    width: 30px;
+}
+
+.gameWrap{
+   max-width: 300px;
+   max-height: 500px;
+   margin: 0 auto;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: antiquewhite;
+}
+
+
+.itemSize{
+    width: 50px;
+    height: 50px;
+}
+
+.itemsGrid{
+    display: flex;
+    width: fit-content;
+    
+}
+
+button{
+    border-radius: 10px;
+}
+
+.container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      border: black solid 2px;
+}
+
+h6{
+    display: flex;
+    flex-direction: column;
+}
+
+    #inventory-box {
+      opacity: 0;
+      transform: scale(0.95);
+      pointer-events: none;
+      transition: all 0.3s ease;
+      background-color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    #inventory-box.visible {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    }

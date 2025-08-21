@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Team6</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Coding day 1 13:15-14:50 = 1h 35min -->
+    <!-- Coding day 2 12:15-14:45 = 2h 30min (manglet 1 person)-->
+    <!-- Coding day 3 09-30-09:45 = 15 min (manglet 2 personer) -->
+    <!-- Coding day 3 10:40-11:20 = 40 min --->
+    <!-- Time spent = 4h -->
+     
+</head>
+<body>
+  <div onclick="changeLight()">
+  <img src="Images/moon.png" alt="moon" id="lightToggle" class="lightSize">
+  </div>
+<!-- gameWrap = en box rundt hele inventory for å kunne 'holdes sammen' og sentreres -->
+ <div class="gameWrap">
+        
+    <h3>Klikk på en gjenstand for å legge i inventory 🧺 </h3>
+
+    
+<!-- Legger inn Item Icon w/ onclick function for moving it later , ItemSize to make all items the same -->
+<div class="itemsGrid">
+    <img src="Images/apple.png" alt="apple" onclick="" class="itemSize" class="itemApple">
+    <img src="Images/swords.png" alt="sword" onclick="" class="itemSize" class="itemSword">
+    <img src="Images/Shield.png" alt="shield" onclick="" class="itemSize" class="itemShield">
+    <img src="Images/baguette.png" alt="baguette" onclick="" class="itemSize" class="itemBaguette">
+</div>
+<br>
+
+<!-- vis/skjul IKKE RØR -->
+<button class="byButton" id="toggle-btn" onclick="toggleInventory()">Show Inventory</button>
+<br>
+<br>
+
+        <div id="inventory-box">
+           <h4>Ditt Inventory:</h4>
+           <div id="inventory-items" class="itemsGrid"></div>
+               <img src="Images/apple.png" alt="apple" onclick="" class="itemSize" class="itemApple">
+               <img src="Images/swords.png" alt="sword" onclick="" class="itemSize" class="itemSword">
+               <img src="Images/Shield.png" alt="shield" onclick="" class="itemSize" class="itemShield">
+               <img src="Images/baguette.png" alt="baguette" onclick="" class="itemSize" class="itemBaguette">
+        </div>
+
+<br>
+<br>
+</div>
+
+<script src="script.js"></script>
+</html>
